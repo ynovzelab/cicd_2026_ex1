@@ -8,8 +8,9 @@ export default defineConfig([
     ignores: ["dist/*", "node_modules/*"],
   },
   {
-    files: ["./src/**/*.{ts,mts,cts}"], 
-    plugins: { js }, extends: ["js/recommended"],
+    files: ["./src/**/*.{ts,mts,cts}"],
+    plugins: { js },
+    extends: ["js/recommended"],
     languageOptions: { globals: globals.browser },
   },
   tseslint.configs.recommended,
