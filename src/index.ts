@@ -14,6 +14,7 @@ interface Product {
 const app = express();
 
 app.get("/", (req, res) => {
+  console.log("Received request for /");
   res.send("Hello, World!");
 });
 
