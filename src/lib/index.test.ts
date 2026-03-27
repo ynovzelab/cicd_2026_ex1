@@ -111,6 +111,7 @@ describe("calculateCartTotal - TDD", () => {
       ]),
     ).toThrow();
   });
+  
   it("should return an error if qty is null or undefined", () => {
     expect(() =>
       calculateCartTotal([
